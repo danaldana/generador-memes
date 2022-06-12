@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Generador de Memes</title>
+</head>
+
+<body class="modo-oscuro">
+    
+    <main class="container-gral">
+
+    <!-- ^_^ ENCABEZADO ^_^ -->
+
+        <header class="header">
+            <div>
+                <h1 class="titulo">Generador de Memes</h1>
+            </div>
+
+        <!-- -*- botonera -*- -->
+
+            <div class="container-botones">
+                <button id="boton-img" aria-label="Edición de imagen">
+                    <i class="fas fa-file-image"></i>
+                    Imagen
+                </button>
+                <button id="boton-texto" aria-label="Edición de texto">
+                    <i class="fas fa-font"></i>
+                    Texto
+                </button>
+                <button id="boton-modo-claro" aria-label="Cambiar a vista en modo oscuro">
+                    <i class="far fa-lightbulb"></i>
+                    Modo claro
+                </button>
+                <button id="boton-modo-oscuro" class="ocultar" aria-label="Cambiar a vista en modo claro">
+                    <i class="fas fa-lightbulb"></i>
+                    Modo oscuro
+                </button>
+            </div>
+        </header>
+
+    <!-- ^_^ SECCIÓN MEME ^_^ -->
+
+        <!-- -*- meme canvas -*- -->
+
+            <section class="meme-canvas" id="meme-canvas">
+                <article class="espacio-superior" id="espacio-superior">
+                    <p id="texto-superior" class="texto-superior">Texto superior</p>
+                </article>
+                <article class="meme-imagen" id="imagen-meme"></article>
+                <article class="espacio-inferior" id="espacio-inferior">
+                    <p id="texto-inferior" class="texto-inferior">Texto inferior</p>
+                </article>  
+            </section>
+    
+        <!-- -*- botón de descarga de meme -*- -->
+
+            <button class="btn-descarga" id="btn-descarga">
+                <i class="fas fa-cloud-download-alt" aria-hidden="true"></i>
+                Descargar meme
+            </button>
+    </main>
+
+    <!-- ^_^ PANEL LATERAL ^_^ -->
+
+    <aside class="aside aside-oculto" id="aside">
+        <h3 class="cierre-aside" id="cierre-aside" aria-label="Cerrar panel">x</h3>
+
+
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
