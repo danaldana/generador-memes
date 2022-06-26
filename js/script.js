@@ -5,15 +5,26 @@
 // --- Selección de elementos HTML
 
 const botonImg = document.getElementById('boton-img');
-const botonTexto = document.getElementById('boton-texto');
+const botonTxt = document.getElementById('boton-texto');
 const aside = document.getElementById('aside');
 const cierreAside = document.getElementById('cierre-aside');
+const formularioTexto = document.getElementById('formulario-texto');
+const formularioImagen = document.getElementById('formulario-imagen');
 
 // --- funciones y eventos
 
 botonImg.addEventListener('click', () => {
     aside.classList.remove('aside-oculto');
     aside.style.display = 'block';
+    formularioTexto.style.display = 'none';
+    formularioImagen.style.display = 'block';
+})
+
+botonTxt.addEventListener('click', () => {
+    aside.classList.remove('aside-oculto');
+    aside.style.display = 'block';
+    formularioImagen.style.display = 'none';
+    formularioTexto.style.display = 'block';
 })
 
 cierreAside.addEventListener('click',() => {
@@ -43,3 +54,4 @@ botonModoOscuro.addEventListener('click', () => {
     document.body.classList.remove('modo-claro');
     document.body.classList.add('modo-oscuro');
 })
+
