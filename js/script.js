@@ -292,4 +292,26 @@ interlineado.addEventListener('change', () => {
     textoInferior.style.lineHeight = interlineado.value;
 })
 
+
+/// --- DESCARGA MEME --- //
+
+// --- elementos del html ---
+
+const btnDescarga = document.getElementById('btn-descarga');
+const memeCanvas = document.getElementById('meme-canvas');
+
+// ---funciones y eventos---
+
+const descargarImagen = () => {
+    domtoimage.toBlob(memeCanvas)
+        .then(function (blob) {
+            saveAs(blob,'mi-meme.png');
+        });
+}
+
+btnDescarga.addEventListener('click', () => descargarImagen())
+
+
+
+
 // ^-^  FIN  ^-^
