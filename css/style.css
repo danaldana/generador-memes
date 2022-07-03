@@ -26,7 +26,7 @@ body.modo-claro{
 
 body.modo-oscuro{
     --ColorEncabezado: #191e2b;
-    --ColorSeccionMeme: #555555;
+    --ColorSeccionMeme: #30343f;
     --ColorAside: #202020;
     --ColorFuente: #fafafa;
     --ColorBotonHover: #727272;
@@ -254,7 +254,7 @@ h2{
 .color span{
     margin-left: 6px 5px;
     position: absolute;
-    left: 62px;
+    left: 45px;
     top: 25.5%;
     transform: translateY(-50%);
     font-size: 14px;
@@ -283,15 +283,17 @@ h2{
     margin-top: 0px; 
 }
 
+/* .codigo-color-texto{
+
+} */
 
 /* --- FORMULARIO IMAGEN ---*/
 
 .input-rango{
-    outline-style: none;
     appearance: none;
-    height: 6px;
+    height: 5px;
     width: 100%;
-    margin: 4px 0;
+    margin: 4px 0px 4px;
     background-color: var(--ColorFormulario);
     border-radius: 10px;
     cursor: pointer;
@@ -354,9 +356,25 @@ h2{
     margin-bottom: 1rem;
 }
 
-/* .botones-contorno{
+.fila{
+    display: flex;
+    justify-content: space-between;
+}
 
-} */
+.color span{
+    margin-left: 15px;
+}
+
+.color input{
+    width: 40px;
+    background-color: transparent;
+    border: none;
+    outline-style: none;
+}
+
+.codigo-color-texto{
+    padding: 5px 5px;
+}
 
 .boton-contorno{
     padding: 7px;
