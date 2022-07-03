@@ -283,19 +283,24 @@ h2{
     margin-top: 0px; 
 }
 
-/* .codigo-color-texto{
-
-} */
 
 /* --- FORMULARIO IMAGEN ---*/
 
-.input-rango{
+.input-rango {
+    width: 100%;
+    background-color: #5a5d68;
+    border-radius: 10px;
     appearance: none;
     height: 5px;
-    width: 100%;
-    margin: 4px 0px 4px;
-    background-color: var(--ColorFormulario);
-    border-radius: 10px;
+    margin-top: 9px;
+}
+
+.input-rango::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background: rgb(140, 137, 137);
     cursor: pointer;
 }
 
